@@ -45,3 +45,42 @@ Estamos interessados ​​apenas nas funcionalidades relacionadas ao serviço d
 
 # Adicionados
 Openapi 3.0 Swagger
+
+
+# Artigo 
+O texto acima e uma tradução livre do Artigo abaixo e foi usado para entender como o Spring Boot pode ser usado junto  cqrs-pattern:<br/>
+C - Command <br/>
+Q - Query <br/>
+R - Responsibility  <br/>
+S - Segregation <br/>
+
+Entendendo melhor o CQRS <br/>
+A ideia básica é segregar as responsabilidades da aplicação em: <br/>
+
+Command – Operações que modificam o estado dos dados na aplicação.<br/>
+Query – Operações que recuperam informações dos dados na aplicação.<br/>
+
+<a href="https://www.vinsguru.com/cqrs-pattern-microservice-design-patterns/">  cqrs-pattern </a>
+
+Mitos sobre o CQRS
+# 1 Mito – CQRS e Event Sourcing devem ser implementados juntos.
+O Event Sourcing é um outro pattern assim como o CQRS.<br/>
+É uma abordagem que nos permite guardar todos os estados assumidos por uma uma entidade desde sua criação. <br/>
+O Event Sourcing tem uma forte ligação com o CQRS e é facilmente implementado uma vez que temos também o CQRS, <br/>
+porém é possível implementar Event Sourcing independente do CQRS e vice-versa.<br/>
+
+
+# 2 Mito – CQRS requer consistência eventual
+Negativo. Como abordado anteriormente o CQRS pode trabalhar com uma consistência imediata e síncrona.<br/>
+
+# 3 Mito – CQRS depende de Fila/Bus/Queues
+CQRS é dividir as responsabilidades de Queries e Commands, a necessidade de enfileiramento vai surgir dependendo de sua implementação, principalmente se for utilizar a estratégia de consistência eventual.<br/>
+
+# 4 Mito – CQRS é fácil
+Não é fácil. O CQRS também não é uma ciência de foguetes. A implementação vai exigir uma complexidade extra em sua aplicação além de um claro entendimento do domínio e da linguagem ubíqua.<br/>
+
+# 5 Mito – CQRS é arquitetura
+Não é! Conforme foi abordado o CQRS é um pattern arquitetural e pode ser implementado em uma parte específica da sua aplicação para um determinado conjunto de dados apenas.<br/>
+
+# Referências externas
+<a href="https://cqrs.files.wordpress.com/2010/11/cqrs_documents.pdf">  Greg Young (criador do pattern CQRS) </a>
