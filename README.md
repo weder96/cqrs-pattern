@@ -60,7 +60,7 @@ A ideia básica é segregar as responsabilidades da aplicação em: <br/>
 Command – Operações que modificam o estado dos dados na aplicação.<br/>
 Query – Operações que recuperam informações dos dados na aplicação.<br/>
 
-<a href="https://www.vinsguru.com/cqrs-pattern-microservice-design-patterns/">  cqrs-pattern </a>
+<a href="https://www.vinsguru.com/cqrs-pattern-microservice-design-patterns/">  Artigo base de cqrs-pattern </a>
 
 Mitos sobre o CQRS
 # 1 Mito – CQRS e Event Sourcing devem ser implementados juntos.
